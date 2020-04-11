@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="74dp"
+        android:text="@string/cerveja_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/preco1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/preco1in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pre_o_1"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/litro1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/preco1"
+        app:layout_constraintTop_toBottomOf="@+id/item1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ml1in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ml"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/cerveja_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preco1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/preco2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/preco2in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pre_o_2"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/litro2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/preco2"
+        app:layout_constraintTop_toBottomOf="@+id/item2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ml2in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ml"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/cerveja_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preco2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/preco3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/preco3in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pre_o_3"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/litro3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/preco3"
+        app:layout_constraintTop_toBottomOf="@+id/item3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ml3in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ml"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preco3" />
+
+    <TextView
+        android:id="@+id/resultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/resultado"
+        app:layout_constraintStart_toEndOf="@+id/litro1"
+        app:layout_constraintTop_toBottomOf="@+id/item1" />
+
+    <TextView
+        android:id="@+id/resultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/resultado"
+        app:layout_constraintStart_toEndOf="@+id/litro2"
+        app:layout_constraintTop_toBottomOf="@+id/item2" />
+
+    <TextView
+        android:id="@+id/resultado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/resultado"
+        app:layout_constraintStart_toEndOf="@+id/litro3"
+        app:layout_constraintTop_toBottomOf="@+id/item3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

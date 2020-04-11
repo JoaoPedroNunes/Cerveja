@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cerveja</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="valor_litro">Valor Litro</string>
+    <string name="litro_ml">Litro/ml</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="hint">hint</string>
+    <string name="button">Button</string>
+    <string name="resultado">resultado</string>
+    <string name="cerveja_1">Cerveja 1</string>
+    <string name="cerveja_2">Cerveja 2</string>
+    <string name="cerveja_3">Cerveja 3</string>
+    <string name="pre_o_1">Preço 1</string>
+    <string name="pre_o_2">Preço 2</string>
+    <string name="pre_o_3">Preço 3</string>
+    <string name="ml">ml</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultText">0</string>
+    <string name="precoMissing">Ops! Preço não encontrado.</string>
+    <string name="mlMissing">Ops! Volume não encontrado.</string>
+</resources>
